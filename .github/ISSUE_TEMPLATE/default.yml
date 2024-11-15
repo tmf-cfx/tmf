@@ -1,0 +1,32 @@
+---
+name: Bug/Suggestion
+description: Create an issue for your bug report or suggestion.
+title: "[TMF] - Brief title of the issue"
+labels: new
+assignees: ["0xWal"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please provide a detailed description of the issue you're experiencing.
+        This will help us resolve it as quickly as possible.
+
+  - type: dropdown
+    attributes:
+      label: "Related Team"
+      description: "Which team you think the issue belong?"
+      options:
+        - "@tmf-cfx/rz"
+        - "@tmf-cfx/rp"
+
+  - type: textarea
+    attributes:
+      label: "Issue Description"
+      description: "Describe the issue in detail."
+      placeholder: "Explain what went wrong, steps to reproduce, etc."
+    validations:
+      required: true
+
+
+---
